@@ -7,6 +7,9 @@ import config from './config.js';
 import MessageParser from './MessageParser.js';
 import ActionProvider from './ActionProvider.js';
 import './App.css';
+import { Department } from "./pages/Department.js";
+import { Route, Routes} from "react-router-dom";
+
 function MyComponent() {
   return(
     <Chatbot
@@ -33,6 +36,9 @@ function App() {
           Chat
           </Button>
           {showComponent && <MyComponent />}
+          <Routes>
+            <Route path = "/department" element = {<Department/>}/>
+          </Routes>
         </header>
     </div>
   );
