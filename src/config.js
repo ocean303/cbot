@@ -3,6 +3,10 @@ import { createChatBotMessage } from 'react-chatbot-kit';
 import BotAvatar from './components/BotAvatar';
 import Options from './components/options';
 import TimeTable from './components/timetable';
+import Department from './buttoncomp/Department';
+import Unaided from './buttoncomp/Unaided';
+import Aided from './buttoncomp/Aided';
+
 const config = {
   initialMessages: [
     createChatBotMessage(`Welcome to SBMP Help Assistant`,{
@@ -23,6 +27,18 @@ const config = {
     {
       widgetName: "timetable",
       widgetFunc: (props) => <TimeTable {...props}/>
+    },
+    {
+      widgetName: "Depshow",
+      widgetFunc: (props) => <Department {...props}/>
+    },
+    {
+      widgetName: "unaid",
+      widgetFunc: (props) => <Unaided {...props}/>
+    },
+    {
+      widgetName: "aid",
+      widgetFunc: (props) => <Aided {...props}/>
     }
   ],
 };

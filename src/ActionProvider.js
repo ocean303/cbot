@@ -22,6 +22,29 @@ class ActionProvider {
     this.setChatbotMessage(message)
   }
 
+  Dephand = () => {
+    const message = this.createChatBotMessage("We have two major Departments",{
+      widget: "Depshow"
+    })
+    this.setChatbotMessage(message)
+  }
+
+  Unhand = () => {
+    const message = this.createChatBotMessage("We have following Unaided Departments",{
+      widget: "unaid"
+    })
+    this.setChatbotMessage(message)
+  }
+
+  Aidhand = () => {
+    const message = this.createChatBotMessage("We have following Aided Departments",{
+      widget: "aid"
+    })
+    this.setChatbotMessage(message)
+  }
+
+  
+
   elseHandler = () => {
     const message = this.createChatBotMessage("Sorry Did not get you")
     this.setChatbotMessage(message)

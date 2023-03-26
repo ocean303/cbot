@@ -1,14 +1,14 @@
 import React from 'react'
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
-import { Link } from "react-router-dom";
+
 
 const options = (props) => {
     return(
         <>
         <Stack direction="row" spacing={1}>
         <Button size = "small" variant="outlined" onClick={props.actionProvider.CSEhand}>About</Button>
-        <Button size = "small" variant="outlined" color="primary"><Link to = "/Department">Deparment</Link></Button>
+        <Button size = "small" variant="outlined" color="primary" onClick={props.actionProvider.Dephand}>Deparment</Button>
         <Button size = "small" variant="outlined" color="primary" href = "https://sbmp.ac.in/Diploma%20(Aided)/M__46">Academic</Button>
         </Stack>
         <Stack direction="row" spacing={1} marginTop="15px">
